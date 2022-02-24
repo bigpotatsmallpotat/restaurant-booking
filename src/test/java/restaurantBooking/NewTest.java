@@ -23,6 +23,7 @@ public class NewTest {
 	  //navigate the browser to this url
 	  driver.get("http://localhost:8090/restaurant-booking/RestaurantServlet/dashboard");
 	  
+	  //CREATE AND RETRIEVE FUNCTION	  
 	  //browser look for link with text value "Add New Restaurant"
 	  driver.findElement(By.linkText("Add New Restaurant")).click();
 	  
@@ -40,10 +41,36 @@ public class NewTest {
 	  
 	  //browser look for link with text value "Call Servlet"
 	  driver.findElement(By.cssSelector("body > form > input[type=submit]:nth-child(5)")).click();
-	  
+	  	  
 	  //browser look for link with text value "Click here to go to restaurant management dashboard"
 	  driver.findElement(By.linkText("Click here to go to restaurant management dashboard")).click();
-	   
+	  
+	  //UPDATE FUNCTION	  
+	  //browser look for link with text value "Edit" for the newly created entry
+	  driver.findElement(By.cssSelector("body > div > div > table > tbody > tr:nth-child(1) > td:nth-child(5) > a:nth-child(1)")).click();
+	  
+	  //browser update Name for newly created restaurant"
+	  driver.findElement(By.cssSelector("body > div > div > div > form > fieldset:nth-child(3) > input")).clear();
+	  driver.findElement(By.cssSelector("body > div > div > div > form > fieldset:nth-child(3) > input")).sendKeys("Updated Name");
+	  
+	  //browser update Cuisine for newly created restaurant"
+	  driver.findElement(By.cssSelector("body > div > div > div > form > fieldset:nth-child(4) > input")).clear();
+	  driver.findElement(By.cssSelector("body > div > div > div > form > fieldset:nth-child(4) > input")).sendKeys("Updated Cuisine");
+	  
+	  //browser update address for newly created restaurant"
+	  driver.findElement(By.cssSelector("body > div > div > div > form > fieldset:nth-child(5) > input")).clear();
+	  driver.findElement(By.cssSelector("body > div > div > div > form > fieldset:nth-child(5) > input")).sendKeys("Updated Address");
+	  
+	  //browser update info for newly created restaurant"
+	  driver.findElement(By.cssSelector("body > div > div > div > form > fieldset:nth-child(6) > input")).clear();
+	  driver.findElement(By.cssSelector("body > div > div > div > form > fieldset:nth-child(6) > input")).sendKeys("Updated Info");
+	  
+	  //browser look for save button
+	  driver.findElement(By.cssSelector("body > div > div > div > form > button")).click();
+	  
+	  //DELETE FUNCTION
+	  //browser look for delete button
+	  driver.findElement(By.cssSelector("body > div > div > table > tbody > tr:nth-child(2) > td:nth-child(5) > a:nth-child(2)")).click();
 	  
 	  
   }
