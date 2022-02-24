@@ -42,18 +42,33 @@ public class NewTest {
       //browser automatically looks and clicks servlet button
       driver.findElement(By.cssSelector("body > form > input[type=submit]:nth-child(6)")).click();
 	  
+      // update function      
+      // browser look for link with text value "Edit" for the newly created entry
+      driver.findElement(By.cssSelector("body > div > div > table > tbody > tr:nth-child(4) > td:nth-child(6) > a:nth-child(1)")).click();
+      
+      // browser update Name for newly created restaurant"
+      driver.findElement(By.cssSelector("body > div > div > div > form > fieldset:nth-child(3) > input")).clear();
+      driver.findElement(By.cssSelector("body > div > div > div > form > fieldset:nth-child(3) > input")).sendKeys("SelUpda Name");
+      
+      // browser update Cuisine for newly created restaurant"
+      driver.findElement(By.cssSelector("body > div > div > div > form > fieldset:nth-child(4) > input")).clear();
+      driver.findElement(By.cssSelector("body > div > div > div > form > fieldset:nth-child(4) > input")).sendKeys("SelUpda Email");
+      
+      // browser update address for newly created restaurant"
+      driver.findElement(By.cssSelector("body > div > div > div > form > fieldset:nth-child(5) > input")).clear();
+      driver.findElement(By.cssSelector("body > div > div > div > form > fieldset:nth-child(5) > input")).sendKeys("SelUpda Password");
+      
+      // browser update info for newly created restaurant"
+      driver.findElement(By.cssSelector("body > div > div > div > form > fieldset:nth-child(6) > input")).clear();
+      driver.findElement(By.cssSelector("body > div > div > div > form > fieldset:nth-child(6) > input")).sendKeys("SelUpda Gender");
+      
+      // browser look for save button
+      driver.findElement(By.cssSelector("body > div > div > div > form > button")).click();
 	  
-	  // browser look for link with text value "Why RP"?
-	  //driver.findElement(By.linkText("Why RP?")).click();
+      // delete function
+      // browser look for delete button
+      driver.findElement(By.cssSelector("body > div > div > table > tbody > tr:nth-child(4) > td:nth-child(6) > a:nth-child(2)")).click();
 	  
-	  // browser look for link with text value "Experience Real-World Learning"
-	  //driver.findElement(By.linkText("Experience Real-World Learning")).click();
-	  
-	  // browser look for link with text value "Why RP"?
-	  //driver.findElement(By.linkText("Why RP?")).click();
-	  
-	  // browser look for link with text value "Experience Real-World Learning"
-	  //driver.findElement(By.linkText("Thrive in a Supportive Community")).click();
   }
   @BeforeTest
   public void beforeTest() {
