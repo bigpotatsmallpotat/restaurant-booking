@@ -12,7 +12,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>Restaurant Booking</h1>
 <div class="row">
 		<div class="container">
 			<h3 class="text-center">List of Restaurants</h3>
