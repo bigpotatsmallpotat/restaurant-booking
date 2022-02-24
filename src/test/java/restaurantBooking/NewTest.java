@@ -23,6 +23,7 @@ public class NewTest {
 	  //navigate the browser to this url
 	  driver.get("http://localhost:8090/restaurant-booking/RestaurantServlet/dashboard");
 	  
+	  //Test that CRUD functionalities are properly working
 	  //CREATE AND RETRIEVE FUNCTION	  
 	  //browser look for link with text value "Add New Restaurant"
 	  driver.findElement(By.linkText("Add New Restaurant")).click();
@@ -39,7 +40,7 @@ public class NewTest {
 	  //browser write Info for restaurant creation"
 	  driver.findElement(By.cssSelector("body > form > input[type=text]:nth-child(4)")).sendKeys("Auto Info");
 	  
-	  //browser look for link with text value "Call Servlet"
+	  //browser look for call servlet button
 	  driver.findElement(By.cssSelector("body > form > input[type=submit]:nth-child(5)")).click();
 	  	  
 	  //browser look for link with text value "Click here to go to restaurant management dashboard"
