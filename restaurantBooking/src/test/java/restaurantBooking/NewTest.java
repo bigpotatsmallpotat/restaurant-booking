@@ -70,6 +70,12 @@ public class NewTest {
       driver.findElement(By.cssSelector("body > div > div > table > tbody > tr:nth-child(4) > td:nth-child(6) > a:nth-child(2)")).click();
 	  
   }
+  
+  @Test
+  public void updateAccount() {
+	  
+	  
+  }
   @BeforeTest
   public void beforeTest() {
   }
