@@ -14,7 +14,6 @@
 <body>
 <div class="row">
 		<div class="container">
-		<h1>Test Tomcat</h1>
 			<h3 class="text-center">List of Restaurants</h3>
 			<hr>
 			<div class="container text-left">
