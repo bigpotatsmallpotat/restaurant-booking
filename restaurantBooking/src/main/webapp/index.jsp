@@ -10,9 +10,8 @@
 	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
 	crossorigin="anonymous">
 </head>
-
+<h1>test tomcat</h1>
 <body>
-
 <div class='container'>
 	<div class='header'>
 		<h1><b>Restaurant Booking</b></h1>
