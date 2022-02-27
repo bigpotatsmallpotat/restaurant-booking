@@ -1,25 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="1" passed="1" failed="0" skipped="0">
+<testng-results total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-02-24T07:49:52Z" name="Suite" finished-at="2022-02-24T07:49:54Z" duration-ms="2065">
+  <suite started-at="2022-02-27T08:37:41Z" name="Default suite" finished-at="2022-02-27T08:37:44Z" duration-ms="3140">
     <groups>
     </groups>
-    <test started-at="2022-02-24T07:49:52Z" name="Test" finished-at="2022-02-24T07:49:54Z" duration-ms="2065">
+    <test started-at="2022-02-27T08:37:41Z" name="Default test" finished-at="2022-02-27T08:37:44Z" duration-ms="3140">
       <class name="restaurantBooking.NewTest">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:restaurantBooking.NewTest@1c481ff2]" started-at="2022-02-24T15:49:52Z" name="beforeTest" finished-at="2022-02-24T15:49:52Z" duration-ms="7" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:restaurantBooking.NewTest@72437d8d]" started-at="2022-02-27T16:37:41Z" name="beforeTest" finished-at="2022-02-27T16:37:41Z" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="f()[pri:0, instance:restaurantBooking.NewTest@1c481ff2]" started-at="2022-02-24T15:49:52Z" name="f" finished-at="2022-02-24T15:49:54Z" duration-ms="2049" status="PASS">
+        <test-method signature="LogOut()[pri:0, instance:restaurantBooking.NewTest@72437d8d]" started-at="2022-02-27T16:37:41Z" name="LogOut" finished-at="2022-02-27T16:37:43Z" duration-ms="1492" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LogOut -->
+        <test-method signature="f()[pri:0, instance:restaurantBooking.NewTest@72437d8d]" started-at="2022-02-27T16:37:43Z" name="f" finished-at="2022-02-27T16:37:44Z" duration-ms="1634" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:restaurantBooking.NewTest@1c481ff2]" started-at="2022-02-24T15:49:54Z" name="afterTest" finished-at="2022-02-24T15:49:54Z" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:restaurantBooking.NewTest@72437d8d]" started-at="2022-02-27T16:37:44Z" name="afterTest" finished-at="2022-02-27T16:37:44Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- restaurantBooking.NewTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
